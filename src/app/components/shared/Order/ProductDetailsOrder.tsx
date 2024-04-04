@@ -13,7 +13,7 @@ const MAX_ITEM = 15
 
 export default function ProductDetailsOrder({ item }:ProductDetailsOrderProps) {
 
-  const { increaseQuantity, decreaseQuantity } = useStore();
+  const { increaseQuantity, decreaseQuantity, removeItem } = useStore();
 
   const disabledDecreaseButton = useMemo(()=>item.quantity === MIN_ITEM,[item])
   const disabledIncreaseButton = useMemo(()=>item.quantity === MAX_ITEM,[item])
@@ -25,7 +25,7 @@ export default function ProductDetailsOrder({ item }:ProductDetailsOrderProps) {
             <p className="text-xl font-semibold">{item.name} </p>
             <button
               type="button"
-              onClick={() => {}}
+              onClick={() => removeItem(item.id)}
             >
               <XCircleIcon className="text-red-600 h-8 w-8"/>
             </button>
