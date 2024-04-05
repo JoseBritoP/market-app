@@ -18,11 +18,10 @@ export default function Form({order,total}:FormProps) {
     const data = {
       clientName,
       total,
-      orderProducts:order
+      order
     }
 
     const result = orderSchema.safeParse(data);
-    console.log(result)
     if(!result.success){
       const message = result.error.issues.forEach((issue)=>{
         toast.error(issue.message)
@@ -30,8 +29,9 @@ export default function Form({order,total}:FormProps) {
       return message
     }
 
-    const response = await createOrder(data);
-    console.log(response)
+    await createOrder(data);
+    toast.success('Order placed successfully')
+    cleanOrder();
   }
 
   return (
