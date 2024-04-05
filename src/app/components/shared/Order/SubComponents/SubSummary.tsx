@@ -3,6 +3,7 @@ import React, { useMemo } from 'react'
 import ProductDetailsOrder from '../ProductDetailsOrder'
 import { formatCurrency } from '@/app/utils'
 import { useOrder } from '@/app/services/store'
+import Form from './Form'
 
 export default function SubSummary() {
   const { order } = useOrder();
@@ -14,7 +15,7 @@ export default function SubSummary() {
       <div className='mt-5 flex flex-col gap-y-2'>
         {order.map((item)=>(<ProductDetailsOrder key={item.id} item={item}/>))}
         <p className='text-2xl mt-8 text-center p-2 bg-white rounded-md border shadow'>Total: <span className='font-semibold'>{formatCurrency(total)}</span></p>
-        <form></form>
+        <Form total={total} order={order}/>
       </div>
       )}
     </>
