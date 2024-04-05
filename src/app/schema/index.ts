@@ -13,3 +13,7 @@ export const orderSchema = z.object({
   total:z.number().min(1,'There are errors in the order'),
   order:z.array(itemSchema)
 })
+
+export const SearchSchema = z.object({
+  search:z.string().trim().min(1,{message:'The search is not valid'})
+})
