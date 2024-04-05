@@ -1,9 +1,10 @@
+import Heading from '@/app/components/shared/ui/Heading'
 import React from 'react'
 
 export default function AdminOrdersPage() {
   return (
     <div>
-      Orders
+      <Heading title='Manage orders'/>
     </div>
   )
 }
