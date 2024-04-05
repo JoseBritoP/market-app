@@ -8,12 +8,13 @@ interface Store {
   increaseQuantity: (id:Product['id']) => void
   decreaseQuantity: (id:Product['id']) => void
   removeItem:(id:Product['id']) => void
+  cleanOrder:()=>void
 };
 
 export const useOrder = create<Store>((set,get)=>({
   order:[],
   addToOrder:(product)=>{
-    console.log('Agregando...',product);
+    // console.log('Agregando...',product);
     const { categoryId, image, ...data} = product
     let order:OrderItem[] = [];
     if(get().order.find((item)=>item.id === data.id)){
@@ -55,6 +56,12 @@ export const useOrder = create<Store>((set,get)=>({
   removeItem:(id)=>{
     set((state)=>({
       order:state.order.filter((item)=>item.id !== id)
+    }))
+  },
+  cleanOrder:()=>{
+    console.log('Limpiando...')
+    set(()=>({
+      order:[]
     }))
   }
 }))
