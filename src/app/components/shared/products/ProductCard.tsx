@@ -7,6 +7,7 @@ interface ProductCardProps {
   product:Product
 }
 export default function ProductCard({product}:ProductCardProps) {
+  // TODO: Fix styles responsive
   return (
     <div className="border bg-white rounded-md">
       <Image src={`/products/${product.image}.jpg`} alt={`Menu ${product.name}`} height={300} width={400} className="object-contain"/>
