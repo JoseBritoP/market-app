@@ -26,3 +26,7 @@ export const getProductsWithCategories = async (page:number,pageSize:number) =>{
   });
   return products;
 }
+
+export const getProductsTotal = async () => {
+  return await prisma.product.count();
+};
