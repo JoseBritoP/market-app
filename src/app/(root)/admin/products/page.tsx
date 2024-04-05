@@ -1,9 +1,10 @@
+import Heading from '@/app/components/shared/ui/Heading'
 import React from 'react'
 
 export default function ProductPage() {
   return (
     <section>
-      <h1>ProductPage</h1>
+      <Heading title='Manage Products'/>
     </section>
   )
 }
