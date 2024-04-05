@@ -19,7 +19,7 @@ export async function createOrder(data:DataProps) {
   };
 
   try {
-    await createOrderDB(result.data)
+    await createOrderDB(result.data);
   } catch (error) {
     console.log('error',error)
   }
