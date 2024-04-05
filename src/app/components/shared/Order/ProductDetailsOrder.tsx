@@ -1,4 +1,4 @@
-import { useStore } from "@/app/services/store"
+import { useOrder } from "@/app/services/store"
 import { OrderItem } from "@/app/types"
 import { formatCurrency } from "@/app/utils"
 import { MinusIcon, PlusIcon, XCircleIcon } from "@heroicons/react/24/outline"
@@ -13,7 +13,7 @@ const MAX_ITEM = 15
 
 export default function ProductDetailsOrder({ item }:ProductDetailsOrderProps) {
 
-  const { increaseQuantity, decreaseQuantity, removeItem } = useStore();
+  const { increaseQuantity, decreaseQuantity, removeItem } = useOrder();
 
   const disabledDecreaseButton = useMemo(()=>item.quantity === MIN_ITEM,[item])
   const disabledIncreaseButton = useMemo(()=>item.quantity === MAX_ITEM,[item])

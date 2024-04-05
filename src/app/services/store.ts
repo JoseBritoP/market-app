@@ -10,7 +10,7 @@ interface Store {
   removeItem:(id:Product['id']) => void
 };
 
-export const useStore = create<Store>((set,get)=>({
+export const useOrder = create<Store>((set,get)=>({
   order:[],
   addToOrder:(product)=>{
     console.log('Agregando...',product);
