@@ -1,5 +1,5 @@
-import { getProducts } from "./01 - getProducts";
+import { getProducts,getProductsWithCategories } from "./01 - getProducts";
 
 export {
-  getProducts
+  getProducts,getProductsWithCategories
 }
