@@ -1,5 +1,4 @@
 import { getProducts } from '@/app/api/controllers/product'
-import Order from '@/app/components/shared/Order/Order'
 import ProductCard from '@/app/components/shared/products/ProductCard'
 
 export default async function OrderPage({params}:{params:{category:string}}) {
