@@ -30,3 +30,20 @@ export const getProductsWithCategories = async (page:number,pageSize:number) =>{
 export const getProductsTotal = async () => {
   return await prisma.product.count();
 };
+
+export const getProductsBySearch = async( searchTerm:string) => {
+
+  const products = await prisma.product.findMany({
+    where:{
+      name:{
+        contains:searchTerm,
+        mode:'insensitive'
+      }
+    },
+    include:{
+      category:true
+    }
+  });
+
+  return products
+};
