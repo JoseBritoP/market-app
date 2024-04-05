@@ -28,7 +28,7 @@ export default function OrderCard({order}:OrderCardProps) {
           <dd className="text-base font-medium text-gray-900">{formatCurrency(total)}</dd>
         </div>
       </dl>
-      <OrderForm/>
+      <OrderForm orderId={order.id}/>
     </section>
   )
 }
