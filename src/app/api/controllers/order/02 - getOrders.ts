@@ -18,3 +18,26 @@ export const getPendingOrders = async () => {
 
   return orders
 };
+
+export const getReadyOrders = async () => {
+  const orders = await prisma.order.findMany({
+    take:5,
+    where:{
+      orderReadyAt:{
+        not:null
+      }
+    },
+    orderBy:{
+      orderReadyAt:'desc'
+    },
+    include:{
+      orderProducts:{
+        include:{
+          product:true
+        }
+      }
+    }
+  });
+
+  return orders
+}
