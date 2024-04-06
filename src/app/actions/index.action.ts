@@ -3,6 +3,7 @@
 import { orderSchema } from "../schema";
 import { OrderItem } from "../types";
 import { createOrderDB } from "../api/controllers/order";
+import { revalidatePath } from "next/cache";
 
 interface DataProps {
     clientName: FormDataEntryValue | null;
@@ -20,6 +21,8 @@ export async function createOrder(data:DataProps) {
 
   try {
     await createOrderDB(result.data);
+    revalidatePath('/admin/orders')
+    return
   } catch (error) {
     console.log('error',error)
   }
