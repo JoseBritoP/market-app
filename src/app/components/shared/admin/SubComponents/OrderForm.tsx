@@ -9,8 +9,8 @@ export default function OrderForm({orderId}:Props) {
       <input type='hidden' value={orderId} name='order_id'/>
       <input
           type="submit"
-          className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
-          value='Marcar Orden Completada'
+          className="rounded-md bg-green-700 hover:bg-green-600 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
+          value='Complete order'
       />
     </form>
   )
