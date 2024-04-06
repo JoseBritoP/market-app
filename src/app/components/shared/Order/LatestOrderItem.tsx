@@ -1,4 +1,5 @@
 import { OrderWithProducts } from '@/app/types'
+import { formatDate } from '@/app/utils'
 import React from 'react'
 
 interface LatestOrderItemProps {
@@ -16,6 +17,7 @@ export default function LatestOrderItem({order}:LatestOrderItemProps) {
           </li>
         ))}
       </ul>
+      <p className='text-sm font-semibold  text-green-500'>Ready At: <span className='font-bold'>{formatDate(order.orderReadyAt?.toString()!)}</span></p>
     </div>
   )
 }

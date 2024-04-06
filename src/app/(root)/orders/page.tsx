@@ -1,3 +1,4 @@
+import { revalidatePath } from 'next/cache';
 import React from 'react'
 import { getReadyOrders } from '@/app/api/controllers/order'
 import LatestOrderItem from '@/app/components/shared/Order/LatestOrderItem';
@@ -6,6 +7,7 @@ import Logo from '@/app/components/shared/ui/Logo'
 export default async function OrdersPage() {
 
   const orders = await getReadyOrders();
+  
   return (
     <section className='flex flex-col w-full px-10'>
       <h1 className='text-4xl font-bold mt-10 text-center'>Ready Orders</h1>
