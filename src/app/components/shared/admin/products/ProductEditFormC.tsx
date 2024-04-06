@@ -1,16 +1,17 @@
 "use client"
 
-import { createProduct } from "@/app/actions/create-product-action";
+import { updateProduct } from "@/app/actions/update-product-action";
 import { ProductSchema } from "@/app/schema";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import GoBackButton from "../../ui/GoBackButton";
+import { useParams } from "next/navigation";
 
 export default function ProductEditFormC({children}:{children:React.ReactNode}) {
 
   const router = useRouter();
-
+  const params = useParams();
+  const productId = params.productId!
   const handleSubmit = async (formData:FormData) => {
     const name = formData.get('name');
     const price = formData.get('price');
@@ -32,7 +33,8 @@ export default function ProductEditFormC({children}:{children:React.ReactNode}) 
       })
       return
     };
-    const response = await createProduct(result.data);
+
+    const response = await updateProduct(result.data,+productId);
     //@ts-ignore
     if(response?.errors){
       //@ts-ignore
@@ -42,7 +44,7 @@ export default function ProductEditFormC({children}:{children:React.ReactNode}) 
       return
     };
 
-    toast.success('Product was created successfully!')
+    toast.success('Product was updated successfully!')
     router.push('/admin/products')
   }
 
