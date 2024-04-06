@@ -5,6 +5,7 @@ import { ProductSchema } from "@/app/schema";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
+import GoBackButton from "../../ui/GoBackButton";
 
 export default function ProductEditFormC({children}:{children:React.ReactNode}) {
 
@@ -55,10 +56,7 @@ export default function ProductEditFormC({children}:{children:React.ReactNode}) 
             value={`Save changes`}
             className="bg-green-700 hover:bg-green-600 text-white w-full mt-5 rounded-md p-3 uppercase font-bold cursor-pointer"
             />
-          <Link 
-            href={'/admin/products'}
-            className="bg-red-800 hover:bg-red-700 transition-colors ease-in-out text-white w-full mt-5 p-3 rounded-md uppercase font-bold cursor-pointer text-center"
-          >Cancel</Link>
+          <GoBackButton/>
         </div>
       </form>
     </div>
