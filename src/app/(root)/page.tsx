@@ -1,9 +1,4 @@
-import React from 'react'
-
+import { redirect } from 'next/navigation'
 export default function HomePage() {
-  return (
-    <main>
-      <h1>MarketPage</h1>
-    </main>
-  )
+  redirect('/order/coffee')
 }
