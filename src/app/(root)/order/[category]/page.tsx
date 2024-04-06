@@ -9,7 +9,7 @@ export default async function OrderPage({params}:{params:{category:string}}) {
   return (
     <section>
       <Heading title='Choose and customize your order below'/>
-      <div className='grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-5 gap-4 items-center'>
+      <div className='grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-4 gap-4 items-center'>
         {products.map((product)=>(<ProductCard key={product.id} product={product}/>))}
       </div>
     </section> 
