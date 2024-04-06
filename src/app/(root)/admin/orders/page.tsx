@@ -8,14 +8,14 @@ export default async function AdminOrdersPage() {
   return (
     <div>
       <Heading title='Manage orders'/>
-      { orders ? 
+      { orders &&
         (
-          <div className='gird grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5'>
             {orders.map((order)=>(<OrderCard key={order.id} order={order}/>))}
           </div>
         ) 
-        : <p>No orders</p>
       }
+      {!orders.length && <p className='text-slate-700 text-xl font-medium'>No orders pending...</p>}
     </div>
   )
 }
