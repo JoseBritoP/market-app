@@ -47,3 +47,16 @@ export const getProductsBySearch = async( searchTerm:string) => {
 
   return products
 };
+
+export const getProductById = async (productId:string) => {
+  const product = await prisma.product.findUnique({
+    where:{
+      id:+productId
+    },
+    include:{
+      category:true
+    }
+  });
+
+  return product
+}
