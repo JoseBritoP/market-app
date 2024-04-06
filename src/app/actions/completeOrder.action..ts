@@ -10,6 +10,8 @@ export async function completeOrder(formData:FormData) {
   try {
     await orderStatus(orderId);
     revalidatePath('/admin/orders')
+    revalidatePath('/orders')
+    return
   } catch (error) {
     console.log('Error completing order status',error)
   }
