@@ -10,6 +10,9 @@ export const createProductDB = async ({categoryId,image,name,price}:Props) => {
   const newProduct = await prisma.product.create({
     data:{
       image,name,price,categoryId
+    },
+    include:{
+      category:true
     }
   });
 
