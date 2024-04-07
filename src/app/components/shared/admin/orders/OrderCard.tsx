@@ -28,8 +28,10 @@ export default function OrderCard({order}:OrderCardProps) {
           <dd className="text-base font-medium text-gray-900">{formatCurrency(total)}</dd>
         </div>
       </dl>
-      <OrderCompleteForm orderId={order.id}/>
-      <OrderCancelForm orderId={order.id}/>
+      <div className='flex items-center justify-between '>
+        <OrderCompleteForm orderId={order.id}/>
+        <OrderCancelForm orderId={order.id}/>
+      </div>
     </section>
   )
 }
