@@ -1,4 +1,5 @@
 import { getPendingOrders } from '@/app/api/controllers/order'
+import FormRevalidate from '@/app/components/shared/FormRevalidate';
 import OrderCard from '@/app/components/shared/admin/orders/OrderCard';
 import Heading from '@/app/components/shared/ui/Heading'
 import React from 'react'
@@ -8,6 +9,7 @@ export default async function AdminOrdersPage() {
   return (
     <div>
       <Heading title='Manage orders'/>
+      <FormRevalidate/>
       { orders &&
         (
           <div className='grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5'>
