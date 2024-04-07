@@ -1,8 +1,8 @@
 import React from 'react'
 import { OrderWithProducts } from '@/app/types'
 import { formatCurrency } from '@/app/utils'
-import { completeOrder } from '@/app/actions/completeOrder.action.'
-import OrderForm from '../SubComponents/OrderForm'
+import OrderCompleteForm from '../SubComponents/OrderCompleteForm'
+import OrderCancelForm from '../SubComponents/OrderCancelForm'
 
 interface OrderCardProps {
   order:OrderWithProducts
@@ -28,7 +28,8 @@ export default function OrderCard({order}:OrderCardProps) {
           <dd className="text-base font-medium text-gray-900">{formatCurrency(total)}</dd>
         </div>
       </dl>
-      <OrderForm orderId={order.id}/>
+      <OrderCompleteForm orderId={order.id}/>
+      <OrderCancelForm orderId={order.id}/>
     </section>
   )
 }
