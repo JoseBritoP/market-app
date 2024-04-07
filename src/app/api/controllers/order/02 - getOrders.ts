@@ -41,3 +41,26 @@ export const getReadyOrders = async () => {
 
   return orders
 }
+
+export const getCancelOrders = async () => {
+  const orders = await prisma.order.findMany({
+    take:5,
+    where:{
+      orderCancelAt:{
+        not:null
+      }
+    },
+    orderBy:{
+      orderCancelAt:'desc'
+    },
+    include:{
+      orderProducts:{
+        include:{
+          product:true
+        }
+      }
+    }
+  });
+
+  return orders
+}
