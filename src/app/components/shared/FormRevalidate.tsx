@@ -1,9 +1,15 @@
 import { revalidatePath } from 'next/cache'
 
-export default function FormRevalidate() {
+interface Props {
+  path?:boolean
+}
+export default function FormRevalidate({path}:Props) {
 
   const handleSubmit = async () => {
     "use server"
+    if(path){
+      return revalidatePath('/admin/orders')
+    }
     revalidatePath('/orders')
   }
   return (
