@@ -7,6 +7,7 @@ interface LatestOrderItemProps {
 }
 
 export default function LatestOrderItem({order}:LatestOrderItemProps) {
+  
   return (
     <div className='bg-white shadow p-5 space-y-5 rounded-lg'>
       <p className='text-2xl font-bold text-slate-600'>Client: <span className='font-semibold'>{order.clientName}</span></p>
@@ -17,7 +18,9 @@ export default function LatestOrderItem({order}:LatestOrderItemProps) {
           </li>
         ))}
       </ul>
-      <p className='text-sm font-semibold  text-green-500'>Ready At: <span className='font-bold'>{formatDate(order.orderReadyAt?.toString()!)}</span></p>
+  
+      {order.orderReadyAt && (<p className='text-sm font-semibold  text-green-500'>Ready At: <span className='font-bold'>{formatDate(order.orderReadyAt?.toString()!)}</span></p>)}
+      {order.orderCancelAt && (<p className='text-sm font-semibold  text-red-500'>Cancel At: <span className='font-bold'>{formatDate(order.orderCancelAt?.toString()!)}</span></p>)}
     </div>
   )
 }
