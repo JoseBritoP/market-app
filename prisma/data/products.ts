@@ -1,354 +1,354 @@
 export const products = [
   {
-      name: "Café Caramel con Chocolate",
+      name: "Caramel Chocolate Coffee",
       price: 59.9,
       image: "cafe_01",
       categoryId: 1
     },
     {
-      name: "Café Frio con Chocolate Grande",
+      name: "Large Cold Chocolate Coffee",
       price: 49.9,
       image: "cafe_02",
       categoryId: 1
     },
     {
-      name: "Latte Frio con Chocolate Grande",
+      name: "Large Cold Chocolate Latte",
       price: 54.9,
       image: "cafe_03",
       categoryId: 1
     },
     {
-      name: "Latte Frio con Chocolate Grande",
+      name: "Large Cold Chocolate Latte",
       price: 54.9,
       image: "cafe_04",
       categoryId: 1
     },
     {
-      name: "Malteada Fria con Chocolate Grande",
+      name: "Large Cold Chocolate Milkshake",
       price: 54.9,
       image: "cafe_05",
       categoryId: 1
     },
     {
-      name: "Café Mocha Caliente Chico",
+      name: "Small Hot Chocolate Mocha",
       price: 39.9,
       image: "cafe_06",
       categoryId: 1
     },
     {
-      name: "Café Mocha Caliente Grande con Chocolate",
+      name: "Large Hot Chocolate Mocha with Chocolate",
       price: 59.9,
       image: "cafe_07",
       categoryId: 1
     },
     {
-      name: "Café Caliente Capuchino Grande",
+      name: "Large Hot Cappuccino Coffee",
       price: 59.9,
       image: "cafe_08",
       categoryId: 1
     },
     {
-      name: "Café Mocha Caliente Mediano",
+      name: "Medium Hot Chocolate Mocha",
       price: 49.9,
       image: "cafe_09",
       categoryId: 1
     },
     {
-      name: "Café Mocha Frio con Caramelo Mediano",
+      name: "Medium Cold Caramel Chocolate Mocha",
       price: 49.9,
       image: "cafe_10",
       categoryId: 1
     },
     {
-      name: "Café Mocha Frio con Chocolate Mediano",
+      name: "Medium Cold Chocolate Mocha",
       price: 49.9,
       image: "cafe_11",
       categoryId: 1
     },
     {
-      name: "Café Espresso",
+      name: "Espresso Coffee",
       price: 29.9,
       image: "cafe_12",
       categoryId: 1
     },
     {
-      name: "Café Capuchino Grande con Caramelo",
+      name: "Large Caramel Cappuccino Coffee",
       price: 59.9,
       image: "cafe_13",
       categoryId: 1
     },
     {
-      name: "Café Caramelo Grande",
+      name: "Large Caramel Coffee",
       price: 59.9,
       image: "cafe_14",
       categoryId: 1
     },
     {
-      name: "Paquete de 3 donas de Chocolate",
+      name: "Pack of 3 Chocolate Donuts",
       price: 39.9,
       image: "donas_01",
       categoryId: 4
     },
     {
-      name: "Paquete de 3 donas Glaseadas",
+      name: "Pack of 3 Glazed Donuts",
       price: 39.9,
       image: "donas_02",
       categoryId: 4
     },
     {
-      name: "Dona de Fresa ",
+      name: "Strawberry Donut",
       price: 19.9,
       image: "donas_03",
       categoryId: 4
     },
     {
-      name: "Dona con Galleta de Chocolate ",
+      name: "Chocolate Cookie Donut",
       price: 19.9,
       image: "donas_04",
       categoryId: 4
     },
     {
-      name: "Dona glass con Chispas Sabor Fresa ",
+      name: "Strawberry Sprinkle Donut",
       price: 19.9,
       image: "donas_05",
       categoryId: 4
     },
     {
-      name: "Dona glass con Chocolate ",
+      name: "Chocolate Glazed Donut",
       price: 19.9,
       image: "donas_06",
       categoryId: 4
     },
     {
-      name: "Dona de Chocolate con MÁS Chocolate ",
+      name: "Double Chocolate Donut",
       price: 19.9,
       image: "donas_07",
       categoryId: 4
     },
     {
-      name: "Paquete de 3 donas de Chocolate ",
+      name: "Pack of 3 Chocolate Donuts",
       price: 39.9,
       image: "donas_08",
       categoryId: 4
     },
     {
-      name: "Paquete de 3 donas con Vainilla y Chocolate ",
+      name: "Pack of 3 Vanilla and Chocolate Donuts",
       price: 39.9,
       image: "donas_09",
       categoryId: 4
     },
     {
-      name: "Paquete de 6 Donas",
+      name: "Pack of 6 Donuts",
       price: 69.9,
       image: "donas_10",
       categoryId: 4
     },
     {
-      name: "Paquete de 3 Variadas",
+      name: "Pack of 3 Assorted Donuts",
       price: 39.9,
       image: "donas_11",
       categoryId: 4
     },
     {
-      name: "Dona Natural con Chocolate",
+      name: "Natural Chocolate Donut",
       price: 19.9,
       image: "donas_12",
       categoryId: 4
     },
     {
-      name: "Paquete de 3 Donas de Chocolate con Chispas",
+      name: "Pack of 3 Chocolate Chip Donuts",
       price: 39.9,
       image: "donas_13",
       categoryId: 4
     },
     {
-      name: "Dona Chocolate y Coco",
+      name: "Chocolate Coconut Donut",
       price: 19.9,
       image: "donas_14",
       categoryId: 4
     },
     {
-      name: "Paquete Galletas de Chocolate",
+      name: "Pack of Chocolate Cookies",
       price: 29.9,
       image: "galletas_01",
       categoryId: 6
     },
     {
-      name: "Paquete Galletas de Chocolate y Avena",
+      name: "Pack of Chocolate and Oat Cookies",
       price: 39.9,
       image: "galletas_02",
       categoryId: 6
     },
     {
-      name: "Paquete de Muffins de Vainilla",
+      name: "Pack of Vanilla Muffins",
       price: 39.9,
       image: "galletas_03",
       categoryId: 6
     },
     {
-      name: "Paquete de 4 Galletas de Avena",
+      name: "Pack of 4 Oat Cookies",
       price: 24.9,
       image: "galletas_04",
       categoryId: 6
     },
     {
-      name: "Galletas de Mantequilla Variadas",
+      name: "Assorted Butter Cookies",
       price: 39.9,
       image: "galletas_05",
       categoryId: 6
     },
     {
-      name: "Galletas de sabores frutales",
+      name: "Fruity Flavored Cookies",
       price: 39.9,
       image: "galletas_06",
       categoryId: 6
     },
     {
-      name: "Hamburguesa Sencilla",
+      name: "Simple Burger",
       price: 59.9,
       image: "hamburguesas_01",
       categoryId: 2
     },
     {
-      name: "Hamburguesa de Pollo",
+      name: "Chicken Burger",
       price: 59.9,
       image: "hamburguesas_02",
       categoryId: 2
     },
     {
-      name: "Hamburguesa de Pollo y Chili",
+      name: "Chicken and Chili Burger",
       price: 59.9,
       image: "hamburguesas_03",
       categoryId: 2
     },
     {
-      name: "Hamburguesa Queso y  Pepinos",
+      name: "Cheese and Cucumber Burger",
       price: 59.9,
       image: "hamburguesas_04",
       categoryId: 2
     },
     {
-      name: "Hamburguesa Cuarto de Libra",
+      name: "Quarter Pound Burger",
       price: 59.9,
       image: "hamburguesas_05",
       categoryId: 2
     },
     {
-      name: "Hamburguesa Doble Queso",
+      name: "Double Cheese Burger",
       price: 69.9,
       image: "hamburguesas_06",
       categoryId: 2
     },
     {
-      name: "Hot Dog Especial",
+      name: "Special Hot Dog",
       price: 49.9,
       image: "hamburguesas_07",
       categoryId: 2
     },
     {
-      name: "Paquete 2 Hot Dogs",
+      name: "Pack of 2 Hot Dogs",
       price: 69.9,
       image: "hamburguesas_08",
       categoryId: 2
     },
     {
-      name: "4 Rebanadas de Pay de Queso",
+      name: "4 Slices of Cheese Pie",
       price: 69.9,
       image: "pastel_01",
       categoryId: 5
     },
     {
-      name: "Waffle Especial",
+      name: "Special Waffle",
       price: 49.9,
       image: "pastel_02",
       categoryId: 5
     },
     {
-      name: "Croissants De la casa",
+      name: "House Croissants",
       price: 39.9,
       image: "pastel_03",
       categoryId: 5
     },
     {
-      name: "Pay de Queso",
+      name: "Cheese Pie",
       price: 19.9,
       image: "pastel_04",
       categoryId: 5
     },
     {
-      name: "Pastel de Chocolate",
+      name: "Chocolate Cake",
       price: 29.9,
       image: "pastel_05",
       categoryId: 5
     },
     {
-      name: "Rebanada Pastel de Chocolate",
+      name: "Slice of Chocolate Cake",
       price: 29.9,
       image: "pastel_06",
       categoryId: 5
     },
     {
-      name: "Pizza Spicy con Doble Queso",
+      name: "Spicy Double Cheese Pizza",
       price: 69.9,
       image: "pizzas_01",
       categoryId: 3
     },
     {
-      name: "Pizza Jamón y Queso",
+      name: "Ham and Cheese Pizza",
       price: 69.9,
       image: "pizzas_02",
       categoryId: 3
     },
     {
-      name: "Pizza Doble Queso",
+      name: "Double Cheese Pizza",
       price: 69.9,
       image: "pizzas_03",
       categoryId: 3
     },
     {
-      name: "Pizza Especial de la Casa",
+      name: "Special House Pizza",
       price: 69.9,
       image: "pizzas_04",
       categoryId: 3
     },
     {
-      name: "Pizza Chorizo",
+      name: "Chorizo Pizza",
       price: 69.9,
       image: "pizzas_05",
       categoryId: 3
     },
     {
-      name: "Pizza Hawaiana",
+      name: "Hawaiian Pizza",
       price: 69.9,
       image: "pizzas_06",
       categoryId: 3
     },
     {
-      name: "Pizza Tocino",
+      name: "Bacon Pizza",
       price: 69.9,
       image: "pizzas_07",
       categoryId: 3
     },
     {
-      name: "Pizza Vegetales y Queso",
+      name: "Vegetable and Cheese Pizza",
       price: 69.9,
       image: "pizzas_08",
       categoryId: 3
     },
     {
-      name: "Pizza Pepperoni y Queso",
+      name: "Pepperoni and Cheese Pizza",
       price: 69.9,
       image: "pizzas_09",
       categoryId: 3
     },
     {
-      name: "Pizza Aceitunas y Queso",
+      name: "Olive and Cheese Pizza",
       price: 69.9,
       image: "pizzas_10",
       categoryId: 3
     },
     {
-      name: "Pizza Queso, Jamón y Champiñones",
+      name: "Cheese, Ham, and Mushroom Pizza",
       price: 69.9,
       image: "pizzas_11",
       categoryId: 3
