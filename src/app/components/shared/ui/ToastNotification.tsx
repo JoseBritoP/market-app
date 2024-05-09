@@ -5,7 +5,7 @@ import { ToastContainer,Bounce,Slide,Flip,Zoom } from 'react-toastify';
 export default function ToastNotification() {
   return (
     <ToastContainer
-      position='bottom-right'
+      position='top-right'
       autoClose={1800}
       closeOnClick
       theme='light'
