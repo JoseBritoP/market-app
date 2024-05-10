@@ -11,13 +11,15 @@ export default function ProductCard({product}:ProductCardProps) {
   const imagePath = getImagePath(product.image)
   // TODO: Fix styles responsive
   return (
-    <div className="border bg-white rounded-md">
+    <section className="border bg-gray-100 rounded-md shadow-lg">
       <Image src={imagePath} alt={`Menu ${product.name}`} height={300} width={400} className="object-contain"/>
       <div className="p-5 h-60 flex flex-col justify-center items-center">
-        <h3 className="text-xl font-semibold">{product.name}</h3>
+        <div className="flex flex-col w-full h-36">
+        <h3 className="text-xl font-semibold  text-balance">{product.name}</h3>
         <p className="mt-5 font-bold text-4xl text-amber-500 self-start gap-y-5">{formatCurrency(product.price)}</p>
+        </div>
         <AddProductButton product={product}/>
       </div>
-    </div>
+    </section>
   )
 }

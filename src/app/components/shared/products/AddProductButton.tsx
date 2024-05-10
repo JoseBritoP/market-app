@@ -12,7 +12,7 @@ export default function AddProductButton({product}:AddProductButtonProps) {
   const { addToOrder } = useOrder();
 
   return (
-    <button className="bg-sky-600 hover:bg-sky-700 transition-colors 300 ease-in-out text-white w-full mt-5 p-3 uppercase font-semibold cursor-pointer"
+    <button aria-label="Agree product to cart" className="bg-sky-600 hover:bg-sky-700 transition-colors duration-300 ease-in-out text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
       onClick={()=>addToOrder(product)}
     >Agree</button>
   )
