@@ -19,7 +19,7 @@ export default function ProductCard({product}:ProductCardProps) {
       <Image src={imagePath} alt={`Menu ${product.name}`} height={300} width={400} className="object-contain rounded-t-md" loading="lazy"/>
       <div className="p-5 h-60 flex flex-col justify-center items-center">
         <div className="flex flex-col justify-start items-start w-full h-36">
-        <h3 className="text-xl font-semibold h-16 text-balance">{product.name}</h3>
+        <h1 className="text-xl font-semibold h-16 text-balance">{product.name}</h1>
         <p className="mt-5 font-bold text-4xl text-amber-500 self-start gap-y-5">{formatCurrency(product.price)}</p>
         </div>
         <AddProductButton product={product}/>
