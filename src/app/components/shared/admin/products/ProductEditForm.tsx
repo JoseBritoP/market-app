@@ -1,6 +1,7 @@
 import { getCategories } from "@/app/api/controllers/category"
 import ImageUpload from "./ImageUpload";
 import { Product } from "@prisma/client";
+import { toast } from "react-toastify";
 
 interface ProductEditFormProps {
   product?:Product
@@ -8,6 +9,8 @@ interface ProductEditFormProps {
 export default async function ProductEditForm({product}:ProductEditFormProps) {
 
   const categories = await getCategories();
+
+  if(!categories.length) return toast.error(`Error getting the categories`)
 
   return (
       <>
@@ -48,7 +51,7 @@ export default async function ProductEditForm({product}:ProductEditFormProps) {
               defaultValue={product?.categoryId}
           >
               <option value="">-- Select --</option>
-              {categories.map((category)=>(
+              {categories && categories.map((category)=>(
                 <option key={category.id} value={category.id}>{category.name}</option>
               ))}
           </select>
