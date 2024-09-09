@@ -6,7 +6,7 @@ const itemSchema = z.object({
   price:z.number(),
   quantity:z.number(),
   subtotal:z.number()
-})
+}) 
 
 export const orderSchema = z.object({
   clientName:z.string().min(1,"Your name is required"),
